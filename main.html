@@ -53,7 +53,8 @@
 
     <!-- Modal -->
     <div id="modal" class="modal">
-      <div class="modal_content">
+      <form class="modal_content">
+        <!-- Form Logo -->
         <div href="./main.html" class="title_container">
           <img
             class="title_svg"
@@ -66,39 +67,44 @@
             <span class="main_label">GTM</span> Training
           </h1>
         </div>
-        <form class="modal_form">
-          <div class="modal_form_input_container">
-            <input
-              class="modal_form_input"
-              type="text"
-              name="username"
-              placeholder="Name"
-            />
-            <input
-              class="modal_form_input"
-              type="email"
-              name="email"
-              placeholder="Email"
-            />
-            <input
-              class="modal_form_input"
-              type="phone"
-              name="phone"
-              placeholder="Phone"
-            />
-            <label>
-              <input type="checkbox" name="agreement" />
-              Zgoda na wysyłanie przez Bogdana spamu
-            </label>
-          </div>
-        </form>
+
+        <!-- Form -->
+        <div class="modal_form_input_container">
+          <input
+            required
+            class="modal_form_input"
+            type="text"
+            name="username"
+            placeholder="Name"
+          />
+          <input
+            required
+            class="modal_form_input"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <input
+            required
+            class="modal_form_input"
+            type="phone"
+            name="phone"
+            placeholder="Phone"
+          />
+          <label>
+            <input type="checkbox" name="agreement" />
+            Zgoda na wysyłanie przez Bogdana spamu
+          </label>
+        </div>
+
+        <!-- Buttons -->
         <div class="modal_form_buttons_container">
           <button class="modal_form_button" type="submit">Wyślij</button>
           <button class="modal_form_button" id="btnClose" type="button">
             Zamknij
           </button>
         </div>
-      </div>
+      </form>
     </div>
 
     <script src="./modal.js"></script>
