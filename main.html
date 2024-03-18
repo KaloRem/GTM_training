@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GTM Training</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./svg/google-tag-manager-svg.svg"
+    />
+  </head>
+
+  <!-- BODY -->
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a href="./main.html" class="title_container">
+        <img
+          class="title_svg"
+          width="50"
+          height="50"
+          src="./svg/google-tag-manager-svg.svg"
+          alt=""
+        />
+        <h1 class="title_headline">
+          <span class="main_label">GTM</span> Training
+        </h1>
+      </a>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+      <div class="main_container">
+        <a class="link" href="tel:+48574457537">+48 574 457 537</a>
+        <a class="link" href="mailto:bogdan.paslawskii@gmail.com"
+          >bogdan.paslawskii@gmail.com</a
+        >
+        <a class="link" href="./get_out.html">Przykładowa podstrona</a>
+        <button id="btnOpen" type="button" class="button">
+          Formularz kontaktowy
+        </button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <h2 class="footer_headline">
+        <span class="footer_label">by</span> Bogdano
+      </h2>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal_content">
+        <div href="./main.html" class="title_container">
+          <img
+            class="title_svg"
+            width="50"
+            height="50"
+            src="./svg/google-tag-manager-svg.svg"
+            alt=""
+          />
+          <h1 class="title_headline">
+            <span class="main_label">GTM</span> Training
+          </h1>
+        </div>
+        <form class="modal_form">
+          <div class="modal_form_input_container">
+            <input
+              class="modal_form_input"
+              type="text"
+              name="username"
+              placeholder="Name"
+            />
+            <input
+              class="modal_form_input"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+            <input
+              class="modal_form_input"
+              type="phone"
+              name="phone"
+              placeholder="Phone"
+            />
+            <label>
+              <input type="checkbox" name="agreement" />
+              Zgoda na wysyłanie przez Bogdana spamu
+            </label>
+          </div>
+        </form>
+        <div class="modal_form_buttons_container">
+          <button class="modal_form_button" type="submit">Wyślij</button>
+          <button class="modal_form_button" id="btnClose" type="button">
+            Zamknij
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./modal.js"></script>
+  </body>
+</html>
